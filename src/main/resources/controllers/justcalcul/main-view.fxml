@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="240.0" maxWidth="420.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="420.0" style="-fx-background-color: #1c1b1c;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.justcalcul.StartController">
+   <children>
+      <Label layoutX="73.0" layoutY="22.0" prefHeight="30.0" prefWidth="266.0" text="Hello, man! Who are you?" textFill="#dbd8db">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></Label>
+      <Button fx:id="nameBut" layoutX="181.0" layoutY="109.0" mnemonicParsing="false" onAction="#setName" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #8c8c94;" text="Tell" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="20.0" />
+         </font></Button>
+      <TextField fx:id="nameText" layoutX="121.0" layoutY="68.0" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #545c5c;" />
+      <Label layoutX="95.0" layoutY="151.0" prefHeight="30.0" prefWidth="230.0" text="Are you age a 17, yes?" textFill="#dbd8db">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></Label>
+      <Button fx:id="yesBut" layoutX="121.0" layoutY="190.0" mnemonicParsing="false" onAction="#ansYes" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #8c8c94;" text="Yes" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="20.0" />
+         </font></Button>
+      <Button fx:id="noBut" layoutX="241.0" layoutY="190.0" mnemonicParsing="false" onAction="#ansNo" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #8c8c94;" text="No" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

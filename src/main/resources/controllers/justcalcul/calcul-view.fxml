@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="432.0" style="-fx-background-color: #1c1b1c;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.justcalcul.CalculController">
+   <children>
+      <TextField fx:id="ansText" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="79.0" prefHeight="56.0" prefWidth="386.0" style="-fx-background-color: #545c5c; -fx-border-color: #dbd8db; -fx-border-width: 6; -fx-border-radius: 5;">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></TextField>
+      <Button fx:id="oneBut" layoutX="21.0" layoutY="162.0" mnemonicParsing="false" onAction="#oneButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="1" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="twoBut" layoutX="123.0" layoutY="162.0" mnemonicParsing="false" onAction="#twoButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="2" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="threeBut" layoutX="223.0" layoutY="162.0" mnemonicParsing="false" onAction="#threeButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="3" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="fourBut" layoutX="22.0" layoutY="254.0" mnemonicParsing="false" onAction="#fourButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="4" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="fiveBut" layoutX="124.0" layoutY="254.0" mnemonicParsing="false" onAction="#fiveButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="5" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="sixBut" layoutX="224.0" layoutY="254.0" mnemonicParsing="false" onAction="#sixButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="6" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="sevenBut" layoutX="23.0" layoutY="347.0" mnemonicParsing="false" onAction="#sevenButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="7" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="eightBut" layoutX="125.0" layoutY="347.0" mnemonicParsing="false" onAction="#eightButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="8" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="nineBut" layoutX="225.0" layoutY="347.0" mnemonicParsing="false" onAction="#nineButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="9" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="zeroBut" layoutX="124.0" layoutY="436.0" mnemonicParsing="false" onAction="#zeroButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #8c8c94;" text="0" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="mulBut" layoutX="325.0" layoutY="162.0" mnemonicParsing="false" onAction="#mulButAct" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #66666c;" text="*" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="divBut" layoutX="326.0" layoutY="254.0" mnemonicParsing="false" onAction="#divButAct" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #66666c;" text="/" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="minusBut" layoutX="327.0" layoutY="347.0" mnemonicParsing="false" onAction="#minusButAct" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #66666c;" text="-" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="plusBut" layoutX="326.0" layoutY="436.0" mnemonicParsing="false" onAction="#plusButAct" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #66666c;" text="+" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="equalBut" layoutX="225.0" layoutY="436.0" mnemonicParsing="false" onAction="#equalButAct" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #66666c;" text="=" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="35.0" />
+         </font></Button>
+      <Button fx:id="delBut" layoutX="23.0" layoutY="436.0" mnemonicParsing="false" onAction="#delButClick" prefHeight="75.0" prefWidth="83.0" style="-fx-background-color: #f0773b;" text="DEL">
+         <font>
+            <Font name="Carlito" size="25.0" />
+         </font></Button>
+      <Label layoutX="92.0" layoutY="30.0" prefHeight="30.0" prefWidth="248.0" text="Tell me your numbers" textFill="#dbd8db">
+         <font>
+            <Font name="Carlito" size="27.0" />
+         </font></Label>
+      <Text fx:id="savedNumber" layoutX="31.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="67.73675537109375" />
+   </children>
+</AnchorPane>
