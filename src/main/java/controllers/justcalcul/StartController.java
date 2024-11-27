@@ -29,6 +29,8 @@ public class StartController {
     @FXML
     private Button yesBut;
 
+    DataController data = DataController.getDataC();
+
     @FXML
     void ansNo() throws IOException {
 
@@ -63,6 +65,21 @@ public class StartController {
     void setName(ActionEvent event) {
         // if "no name"
         String name = nameText.getText();
+        data.setName(nameText.getText());
+
+        if(data.getName().equals(" "))
+        {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("!");
+            alert.setContentText("Tell");
+            alert.show();
+        }
+        else{
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("!");
+            alert.setContentText("Hi, mr. " + data.getName() + "! Nice to \"see\" you tonight!");
+            alert.show();
+        }
 
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("!");
