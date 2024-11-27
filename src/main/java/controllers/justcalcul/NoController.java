@@ -29,20 +29,12 @@ public class NoController {
     @FXML
     void ageBut(ActionEvent event) {
         //variant
-        String age = age_text.getText();
         data.setAge(age_text.getText());
 
         Alert al = new Alert(Alert.AlertType.CONFIRMATION);
         al.setTitle("!!!");
-        // N A M E!!!!!!!!!!
-        al.setContentText("Okay. " + age + ". I remember this");
         al.setContentText("Okay, mr. " + data.getName() + "." + data.getAge() + ". I remember this");
         al.show();
-    }
-
-    @FXML
-    void ageText(ActionEvent event) {
-
     }
 
     @FXML

@@ -64,7 +64,6 @@ public class StartController {
     @FXML
     void setName(ActionEvent event) {
         // if "no name"
-        String name = nameText.getText();
         data.setName(nameText.getText());
 
         if(data.getName().equals(" "))
@@ -81,10 +80,6 @@ public class StartController {
             alert.show();
         }
 
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("!");
-        alert.setContentText("Hi, mr. " + name + "! Nice to \"see\" you tonight!");
-        alert.show();
     }
 
 }
